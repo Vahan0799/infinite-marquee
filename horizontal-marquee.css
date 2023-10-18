@@ -1,0 +1,33 @@
+.horizontal-marquee {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    gap: var(--_gap);
+    max-width: 100%;
+}
+
+.horizontal-marquee-inner {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    gap: var(--_gap);
+    min-width: 100%;
+    animation: slide var(--_speed) linear infinite var(--_direction);
+}
+
+.marque-examp {
+    width: 100%;
+    padding: 15px;
+    background-color: green;
+}
+
+@keyframes slide {
+    0% {
+        transform: translate(calc(var(--_gap) * -1));
+    }
+    100% {
+        transform: translate(calc(-100% - var(--_gap) * 2));
+    }
+}
