@@ -6,11 +6,20 @@ export default class HorizontalMarquee {
 		this.horizontalDirection = options.horizontalDirection || 'left';
 		this.duplicateCount = options.duplicateCount || 1;
 		this.breakpointSize = options.breakpointSize || 991.8;
+		this.smoothEdges = options.smoothEdges || false;
 		this.mobileSettings = options.mobileSettings || {};
+		this.on = {
+			beforeInit: options.on && options.on.beforeInit || null,
+			afterInit: options.on && options.on.afterInit || null
+		};
 		this.init();
 	}
 
 	init() {
+		if (typeof this.on.beforeInit === 'function') {
+			this.on.beforeInit();
+		}
+
 		if (
 			(typeof window !== 'undefined' || typeof document !== 'undefined') &&
 			(Array.isArray(this.element) ? this.element.length > 0 : this.element)
@@ -27,6 +36,10 @@ export default class HorizontalMarquee {
 				this.configureChildNodes(this.element);
 				this.configureAnimationOptions(this.element);
 			}
+		}
+
+		if (typeof this.on.afterInit === 'function') {
+			this.on.afterInit();
 		}
 	}
 
@@ -103,6 +116,7 @@ export default class HorizontalMarquee {
 			element.style.setProperty('--_speed', `${speed}ms`);
 			element.style.setProperty('--_gap', gap);
 			element.style.setProperty('--_direction', direction);
+			this.smoothEdges && element.classList.add('smooth');
 		};
 
 		updateAnimationOptions();

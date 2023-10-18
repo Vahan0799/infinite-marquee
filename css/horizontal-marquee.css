@@ -6,6 +6,11 @@
     max-width: 100%;
 }
 
+.horizontal-marquee.smooth {
+    -webkit-mask: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
+    mask: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
+}
+
 .horizontal-marquee-inner {
     flex-shrink: 0;
     display: flex;
