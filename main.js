@@ -6,13 +6,15 @@ document.addEventListener('DOMContentLoaded', function () {
 	const wrapper = document.querySelectorAll('.marque-examp')
 
 	wrapper.forEach(el => {
-		new HorizontalMarquee({
+		const marquee = new HorizontalMarquee({
 			element: el,
-			speed: 50000,
+			speed: el.getAttribute('data-speed'),
 			smoothEdges: el.getAttribute('data-smooth'),
-			horizontalDirection: el.getAttribute('data-direction'),
+			direction: el.getAttribute('data-direction'),
+			gap: '15px',
+			duplicateCount: 3,
 			mobileSettings: {
-				horizontalDirection: 'left',
+				direction: 'top',
 				speed: 20000
 			},
 			on: {
