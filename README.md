@@ -73,7 +73,7 @@ new InfiniteMarquee({
 | `duplicateCount`  | `number`         | `1`      | Count of marquee be duplicated to show an effect of continuous flow                |
 | `breakpointSize`  | `number`         | `991.8`  | `max-width` breakpoint for responsive devices, accepted only single breakpoint     |
 | `mobileSettings`  | `object`         | `{}`     | Responsive options (works only for `gap`, `speed` and `direction` properties)      |
-| `on`              | `object`         | `{}`     | Object to contain callback functions (supported only `beforeInit` and `afterInit`) |
+| `on`              | `object`         | `{}`     | Object to contain callback functions below |
 | `beforeInit`      | `function`       | `null`   | A callback function that invokes before marquee initialization                     |
 | `afterInit`       | `function`       | `null`   | A callback function that invokes after marquee initialization`                     |
 | `pauseAnimation`  | `function`       | `null`   | A callback function that invokes on Pause`                                         |
