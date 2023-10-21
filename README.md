@@ -61,20 +61,20 @@ new InfiniteMarquee({
 ```
 
 ## Options
-| Option            | Type             | Default  | Description                                                                        |
-|:------------------|:-----------------|:---------|:-----------------------------------------------------------------------------------|
-| `element`         | `string`, `Node` | `null`   | Selector                                                                           |
-| `direction`       | `string`         | `"left"` | Direction of Marquee animation, `"left"`, `"right"`, `"top"`, `"bottom"`           |
-| `gap`             | `string`         | `"0px"`  | Gap between elements, can be used any units                                        |
-| `speed`           | `number`         | `10000`  | Speed of animation in `ms`                                                         |
-| `smoothEdges`     | `boolean`        | `false`  | Whether to smooth covered edges or not                                             |
-| `fullContainer`   | `boolean`        | `true`   | Marquee element to fill the full width of parent or not                            |
-| `pauseOnHover`    | `boolean`        | `false`  | Pause animation on hover                                                           |
-| `duplicateCount`  | `number`         | `1`      | Count of marquee be duplicated to show an effect of continuous flow                |
-| `breakpointSize`  | `number`         | `991.8`  | `max-width` breakpoint for responsive devices, accepted only single breakpoint     |
-| `mobileSettings`  | `object`         | `{}`     | Responsive options (works only for `gap`, `speed` and `direction` properties)      |
-| `on`              | `object`         | `{}`     | Object to contain callback functions (supported only `beforeInit` and `afterInit`) |
-| `beforeInit`      | `function`       | `null`   | A callback function that invokes before marquee initialization                     |
-| `afterInit`       | `function`       | `null`   | A callback function that invokes after marquee initialization`                     |
-| `pauseAnimation`  | `function`       | `null`   | A callback function that invokes on Pause`                                         |
-| `resumeAnimation` | `function`       | `null`   | A callback function that invokes on Resume`                                        |
+| Option            | Type             | Default  | Description                                                                    |
+|:------------------|:-----------------|:---------|:-------------------------------------------------------------------------------|
+| `element`         | `string`, `Node` | `null`   | Selector                                                                       |
+| `direction`       | `string`         | `"left"` | Direction of Marquee animation, `"left"`, `"right"`, `"top"`, `"bottom"`       |
+| `gap`             | `string`         | `"0px"`  | Gap between elements, can be used any units                                    |
+| `speed`           | `number`         | `10000`  | Speed of animation in `ms`                                                     |
+| `smoothEdges`     | `boolean`        | `false`  | Whether to smooth covered edges or not                                         |
+| `fullContainer`   | `boolean`        | `true`   | Marquee element to fill the full width of parent or not                        |
+| `pauseOnHover`    | `boolean`        | `false`  | Pause animation on hover                                                       |
+| `duplicateCount`  | `number`         | `1`      | Count of marquee be duplicated to show an effect of continuous flow            |
+| `breakpointSize`  | `number`         | `991.8`  | `max-width` breakpoint for responsive devices, accepted only single breakpoint |
+| `mobileSettings`  | `object`         | `{}`     | Responsive options (works only for `gap`, `speed` and `direction` properties)  |
+| `on`              | `object`         | `{}`     | Object to contain callback functions below                                     |
+| `beforeInit`      | `function`       | `null`   | A callback function that invokes before marquee initialization                 |
+| `afterInit`       | `function`       | `null`   | A callback function that invokes after marquee initialization`                 |
+| `pauseAnimation`  | `function`       | `null`   | A callback function that invokes on Pause`                                     |
+| `resumeAnimation` | `function`       | `null`   | A callback function that invokes on Resume`                                    |
