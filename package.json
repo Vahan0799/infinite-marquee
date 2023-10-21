@@ -1,6 +1,6 @@
 {
-  "name": "infinite-marquee",
-  "version": "1.0.0",
+  "name": "vanilla-infinite-marquee",
+  "version": "1.0.1",
   "author": "Vahan Baghdasaryan",
   "license": "MIT",
   "type": "module",
@@ -26,7 +26,11 @@
     "marquee",
     "infinite-marquee",
     "css-marquee",
-    "infinite-scroll"
+    "infinite-scroll",
+    "horizontal-scrolling-carousels",
+    "carousel",
+    "slider",
+    "ticker"
   ],
   "devDependencies": {
     "vite": "^4.4.5"
