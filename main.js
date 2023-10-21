@@ -1,12 +1,12 @@
-import './css/style.css';
-import './css/horizontal-marquee.css';
-import HorizontalMarquee from './js/HorizontalMarquee.js';
+import './style.css';
+import './infinite-marquee.css';
+import InfiniteMarquee from './infinite-marquee.mjs';
 
 document.addEventListener('DOMContentLoaded', function () {
-	const wrapper = document.querySelectorAll('.marque-examp')
+	const wrapper = document.querySelectorAll('.marque-examp');
 
 	wrapper.forEach(el => {
-		const marquee = new HorizontalMarquee({
+		 new InfiniteMarquee({
 			element: el,
 			speed: el.getAttribute('data-speed'),
 			smoothEdges: el.getAttribute('data-smooth'),

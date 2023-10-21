@@ -34,3 +34,9 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
+.marque-examp {
+  width: 100%;
+  padding: 15px;
+  background-color: green;
+}

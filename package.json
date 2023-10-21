@@ -1,13 +1,33 @@
 {
-  "name": "infinite-horizontal-marquee",
-  "private": true,
-  "version": "0.0.0",
+  "name": "infinite-marquee",
+  "version": "1.0.0",
+  "author": "Vahan Baghdasaryan",
+  "license": "MIT",
   "type": "module",
+  "description": "Infinite Horizontal & Vertical Marquee animation based on CSS and controlled with JS",
+  "main": "./infinite-marquee.mjs",
+  "module": "./infinite-marquee.mjs",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Vahan0799/infinite-marquee"
+  },
+  "exports": {
+    ".": {
+      "default": "./infinite-marquee.mjs"
+    },
+    "./css": "./infinite-marquee.css"
+  },
+  "keywords": [
+    "marquee",
+    "infinite-marquee",
+    "css-marquee",
+    "infinite-scroll"
+  ],
   "devDependencies": {
     "vite": "^4.4.5"
   }
