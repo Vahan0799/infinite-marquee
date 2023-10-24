@@ -1,6 +1,6 @@
 {
   "name": "vanilla-infinite-marquee",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "author": "Vahan Baghdasaryan",
   "license": "MIT",
   "type": "module",
@@ -23,8 +23,15 @@
     "css-marquee",
     "infinite-scroll",
     "horizontal-scrolling-carousels",
+    "vertical-scrolling-carousels",
+    "horizontal-scroll",
+    "vertical-scroll",
+    "vertical-marquee",
+    "horizontal-marquee",
     "carousel",
     "slider",
-    "ticker"
+    "ticker",
+    "js",
+    "vanillajs"
   ]
 }

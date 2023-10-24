@@ -18,13 +18,13 @@ If you're using `yarn`, run:
 yarn add vanilla-infinite-marquee
 ```
 
-## _[Demo](https://codepen.io/Vahan0799/pen/MWLWbJK)_
-https://codepen.io/Vahan0799/pen/MWLWbJK
+## **[Demo](https://master--infinite-marquee-demo.netlify.app/)**
 
 ## Usage
 To use the component, first import `CSS styles` into your `CSS/SCSS` file:
 ```scss
-@import 'node_modules/vanilla-infinite-marquee/infinite-marquee.css';
+@import 'node_modules/vanilla-infinite-marquee/infinite-marquee.css'; //OR
+@import 'node_modules/vanilla-infinite-marquee/infinite-marquee.scss';
 ```
 ### _Basic HTML Input_
 ```html

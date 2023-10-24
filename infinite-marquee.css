@@ -1,12 +1,12 @@
 /**
- * Infinite Marquee 1.0.4
+ * Infinite Marquee 1.0.5
  * Infinite Horizontal & Vertical Marquee animation based on CSS and controlled with JS
  *
  * Copyright 2023 Vahan Baghdasaryan
  *
  * Released under the MIT License
  *
- * Released on: October 24, 2023
+ * Released on: October 25, 2023
  */
 
 .horizontal-marquee{display:flex;flex-wrap:nowrap;overflow:hidden;gap:var(--_gap);max-width:100%}.horizontal-marquee.smooth{-webkit-mask:linear-gradient(90deg,transparent,#fff 20%,#fff 80%,transparent);mask:linear-gradient(90deg,transparent,#fff 20%,#fff 80%,transparent)}.horizontal-marquee.paused .horizontal-marquee-inner{animation-play-state:paused}.horizontal-marquee.full .horizontal-marquee-inner{min-width:100%}.horizontal-marquee-inner{display:flex;align-items:center;justify-content:space-around;flex-wrap:nowrap;gap:var(--_gap);white-space:nowrap;animation:horizontal-marquee var(--_speed) linear infinite var(--_direction)}@keyframes horizontal-marquee{0%{transform:translate(calc(var(--_gap) * -1))}100%{transform:translate(calc(-100% - var(--_gap) * 2))}}.vertical-marquee{display:flex;flex-wrap:nowrap;overflow:hidden;margin-bottom:var(--_gap);max-height:100%;flex-direction:column;height:calc(calc(var(--_containerSize) - var(--_vGap))/ 1.2)}.vertical-marquee.smooth{-webkit-mask:linear-gradient(180deg,transparent,#fff 20%,#fff 80%,transparent);mask:linear-gradient(180deg,transparent,#fff 20%,#fff 80%,transparent)}.vertical-marquee.paused .vertical-marquee-inner{animation-play-state:paused}.vertical-marquee-inner{flex-shrink:0;display:flex;align-items:center;justify-content:space-around;flex-wrap:nowrap;margin-bottom:var(--_vGap);animation:vertical-marquee var(--_speed) linear infinite var(--_direction)}.vertical-marquee-inner>:not(:last-child){margin-right:var(--_hGap)}@keyframes vertical-marquee{0%{transform:translateY(calc(var(--_vGap) * -1))}100%{transform:translateY(calc(-100% - var(--_vGap) * 2))}}
