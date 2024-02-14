@@ -1,12 +1,12 @@
 /**
- * Infinite Marquee 1.0.5
+ * Infinite Marquee 1.0.9
  * Infinite Horizontal & Vertical Marquee animation based on CSS and controlled with JS
  *
- * Copyright 2023 Vahan Baghdasaryan
+ * Copyright 2024 Vahan Baghdasaryan
  *
  * Released under the MIT License
  *
- * Released on: October 25, 2023
+ * Released on: February 14, 2024
  */
 
 
@@ -30,7 +30,6 @@
         flex-wrap: nowrap;
         gap: var(--_gap);
         white-space: nowrap;
-        animation: horizontal-marquee var(--_speed) linear infinite var(--_direction);
 
         #{$horiz}.paused & {
             animation-play-state: paused;
@@ -38,6 +37,10 @@
 
         #{$horiz}.full & {
             min-width: 100%;
+        }
+
+        [data-animate='true'] & {
+            animation: horizontal-marquee var(--_speed) linear infinite var(--_direction);
         }
     }
 }
@@ -74,10 +77,13 @@
         justify-content: space-around;
         flex-wrap: nowrap;
         margin-bottom: var(--_vGap);
-        animation: vertical-marquee var(--_speed) linear infinite var(--_direction);
 
         #{$vert}.paused & {
             animation-play-state: paused;
+        }
+
+        [data-animate='true'] & {
+            animation: vertical-marquee var(--_speed) linear infinite var(--_direction);
         }
 
         & > *:not(:last-child) {
