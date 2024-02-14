@@ -73,6 +73,7 @@ new InfiniteMarquee({
 | `pauseOnHover`     | `boolean`        | `false`                                  | Pause animation on hover                                                                      |
 | `destroyOnDesktop` | `boolean`        | `false`                                  | Destroy Marquee structure and animation on `"Desktop"`                                        |
 | `destroyOnMobile`  | `boolean`        | `false`                                  | Destroy Marquee structure and animation on `"Mobile"`                                         |
+| `debug`            | `boolean`        | `false`                                  | Debug in console each event of Marquee lifecycle                                              |
 | `elementClass`     | `string`         | `marquee-container`                      | Class of Container that will be used to destroy Marquee                                       |
 | `duplicateCount`   | `number`         | `1`                                      | Count of marquee be duplicated to show an effect of continuous flow                           |
 | `breakpointSize`   | `number`         | `991.8`                                  | `"max-width"` breakpoint for responsive devices, accepted only single breakpoint              |
