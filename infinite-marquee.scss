@@ -1,12 +1,12 @@
 /**
- * Infinite Marquee 1.0.9
+ * Infinite Marquee 1.0.10
  * Infinite Horizontal & Vertical Marquee animation based on CSS and controlled with JS
  *
  * Copyright 2024 Vahan Baghdasaryan
  *
  * Released under the MIT License
  *
- * Released on: February 14, 2024
+ * Released on: August 1, 2024
  */
 
 
@@ -36,7 +36,7 @@
         }
 
         #{$horiz}.full & {
-            min-width: 100%;
+            min-width: var(--_containerWidth);
         }
 
         [data-animate='true'] & {

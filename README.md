@@ -61,25 +61,26 @@ new InfiniteMarquee({
 ```
 
 ## Options
-| Option             | Type             | Default                                  | Description                                                                                   |
-|:-------------------|:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------|
-| `element`          | `string`, `Node` | `null`                                   | Selector                                                                                      |
-| `direction`        | `string`         | `"left"`                                 | Direction of Marquee animation, `"left"`, `"right"`, `"top"`, `"bottom"`                      |
-| `spaceBetween`     | `string`         | `"0px"`                                  | Gaps to be used for `"left"` or `"right"` direction **ONLY**                                  |
-| `gap`              | `object`         | `{vertical: "5px", "horizontal: "0px" }` | Gaps to be used for `"top"` or `"bottom"` direction **ONLY**                                  |
-| `speed`            | `number`         | `10000`                                  | Speed of animation in `ms`                                                                    |
-| `smoothEdges`      | `boolean`        | `false`                                  | Whether to smooth covered edges or not                                                        |
-| `fullContainer`    | `boolean`        | `true`                                   | Fill the full width of container, for `"left"` or `"right"` direction **ONLY**                |
-| `pauseOnHover`     | `boolean`        | `false`                                  | Pause animation on hover                                                                      |
-| `destroyOnDesktop` | `boolean`        | `false`                                  | Destroy Marquee structure and animation on `"Desktop"`                                        |
-| `destroyOnMobile`  | `boolean`        | `false`                                  | Destroy Marquee structure and animation on `"Mobile"`                                         |
-| `debugging`        | `boolean`        | `false`                                  | Debug in console each event of Marquee lifecycle                                              |
-| `elementClass`     | `string`         | `marquee-container`                      | Class of Container that will be used to destroy Marquee                                       |
-| `duplicateCount`   | `number`         | `1`                                      | Count of marquee be duplicated to show an effect of continuous flow                           |
-| `breakpointSize`   | `number`         | `991.8`                                  | `"max-width"` breakpoint for responsive devices, accepted only single breakpoint              |
-| `mobileSettings`   | `object`         | `{}`                                     | Responsive options (works only for `spaceBetween`, `gap`, `speed` and `direction` properties) |
-| `on`               | `object`         | `{}`                                     | Object to contain callback functions below                                                    |
-| `beforeInit`       | `function`       | `null`                                   | A callback function that invokes before marquee initialization                                |
-| `afterInit`        | `function`       | `null`                                   | A callback function that invokes after marquee initialization                                 |
-| `pauseAnimation`   | `function`       | `null`                                   | A callback function that invokes on Pause                                                     |
-| `resumeAnimation`  | `function`       | `null`                                   | A callback function that invokes on Resume                                                    |
+| Option               | Type             | Default                                  | Description                                                                                      |
+|:---------------------|:-----------------|:-----------------------------------------|:-------------------------------------------------------------------------------------------------|
+| `element`            | `string`, `Node` | `null`                                   | Selector                                                                                         |
+| `direction`          | `string`         | `"left"`                                 | Direction of Marquee animation, `"left"`, `"right"`, `"top"`, `"bottom"`                         |
+| `spaceBetween`       | `string`         | `"0px"`                                  | Gaps to be used for `"left"` or `"right"` direction **ONLY**                                     |
+| `gap`                | `object`         | `{vertical: "5px", "horizontal: "0px" }` | Gaps to be used for `"top"` or `"bottom"` direction **ONLY**                                     |
+| `speed`              | `number`         | `10000`                                  | Speed of animation in `ms`                                                                       |
+| `smoothEdges`        | `boolean`        | `false`                                  | Whether to smooth covered edges or not                                                           |
+| `fullContainer`      | `boolean`        | `true`                                   | Fill the full width of container(**DESKTOP ONLY**), for `"left"` or `"right"` direction **ONLY** |
+| `fullContainerWidth` | `number`         | `100`                                    | Full width container size with **number** value that later converts into percentage              |
+| `pauseOnHover`       | `boolean`        | `false`                                  | Pause animation on hover                                                                         |
+| `destroyOnDesktop`   | `boolean`        | `false`                                  | Destroy Marquee structure and animation on `"Desktop"`                                           |
+| `destroyOnMobile`    | `boolean`        | `false`                                  | Destroy Marquee structure and animation on `"Mobile"`                                            |
+| `debugging`          | `boolean`        | `false`                                  | Debug in console each event of Marquee lifecycle                                                 |
+| `elementClass`       | `string`         | `marquee-container`                      | Class of Container that will be used to destroy Marquee                                          |
+| `duplicateCount`     | `number`         | `1`                                      | Count of marquee be duplicated to show an effect of continuous flow                              |
+| `breakpointSize`     | `number`         | `991.8`                                  | `"max-width"` breakpoint for responsive devices, accepted only single breakpoint                 |
+| `mobileSettings`     | `object`         | `{}`                                     | Responsive options (works only for `spaceBetween`, `gap`, `speed` and `direction` properties)    |
+| `on`                 | `object`         | `{}`                                     | Object to contain callback functions below                                                       |
+| `beforeInit`         | `function`       | `null`                                   | A callback function that invokes before marquee initialization                                   |
+| `afterInit`          | `function`       | `null`                                   | A callback function that invokes after marquee initialization                                    |
+| `pauseAnimation`     | `function`       | `null`                                   | A callback function that invokes on Pause                                                        |
+| `resumeAnimation`    | `function`       | `null`                                   | A callback function that invokes on Resume                                                       |
