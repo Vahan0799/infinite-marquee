@@ -6,6 +6,12 @@
 
 ## Installation
 
+`CDN` Usage
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-infinite-marquee@1.0.12/infinite-marquee.min.css">
+<script src="https://cdn.jsdelivr.net/npm/vanilla-infinite-marquee@1.0.12/infinite-marquee.bundle.js"></script>
+```
+
 If you're using `npm`, in the command prompt run:
 
 ```sh
