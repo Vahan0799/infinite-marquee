@@ -1,11 +1,12 @@
 {
   "name": "vanilla-infinite-marquee",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "author": "Vahan Baghdasaryan",
   "license": "MIT",
   "type": "module",
   "description": "Infinite Horizontal & Vertical Marquee animation based on CSS and controlled with JS",
   "main": "./infinite-marquee.mjs",
+  "types": "types/infinite-marquee.d.ts",
   "module": "./infinite-marquee.mjs",
   "repository": {
     "type": "git",

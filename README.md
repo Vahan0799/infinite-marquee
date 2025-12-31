@@ -4,6 +4,8 @@
 [![npm downloads](https://img.shields.io/npm/dt/react-fast-marquee.svg)](https://www.npmjs.com/package/vanilla-infinite-marquee)
 [![npm license](https://img.shields.io/npm/l/react-fast-marquee.svg)](https://www.npmjs.com/package/vanilla-infinite-marquee)
 
+### Now with  <img src="https://raw.githubusercontent.com/remojansen/logo.ts/master/ts.png" alt="TypeScript" width="15" /> support
+
 ## Installation
 
 `CDN` Usage
