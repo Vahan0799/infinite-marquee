@@ -11,7 +11,7 @@
 `CDN` Usage
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-infinite-marquee@1.0.13/infinite-marquee.min.css">
-<script src="https://cdn.jsdelivr.net/npm/vanilla-infinite-marquee@1.0.13/infinite-marquee.bundle.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanilla-infinite-marquee@1.0.13/infinite-marquee.mjs"></script>
 ```
 
 If you're using `npm`, in the command prompt run:
@@ -26,7 +26,7 @@ If you're using `yarn`, run:
 yarn add vanilla-infinite-marquee
 ```
 
-## **[Demo](https://master--infinite-marquee-demo.netlify.app/)**
+## **[Demo](https://codepen.io/Vahan0799/pen/MYeKYXJ)**
 
 ## Usage
 To use the component, first import `CSS styles` into your `CSS/SCSS` file:
